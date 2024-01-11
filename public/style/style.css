@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #26ff00;
+  overflow: hidden;
+}
+
+nav {
+  background-color: #566d55;
+  padding: 10px;
+  position: s;
+  top: 0;
+  animation: wave 2s infinite; 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+aside {
+  padding-left: 20px;
+  flex: 1; 
+  max-width: 25%; 
+}
+
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #4dc109;
+  text-align: center;
+}
+
+h2, h3 {
+  border-bottom: 2px solid;
+  color: #4b7f48;
+}
+
+#content {
+  flex: 3;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #72eb00;
+  text-align: center;
+  color: white;
+}
+
+.profile header {
+  text-align: center;
+}
+
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px; 
+  border-radius: 50%;
+}
+
+.card {
+  box-shadow: 7px 6px 9px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 12px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column; 
+  }
+
+  #content,
+  aside {
+    width: 100%;
+    max-width: none; 
+  }
+}
